@@ -1,0 +1,20 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+	
+	//For Junit - Unit testing
+    testImplementation 'junit:junit:4.12'
+    
+	//Jackson - For JSON - Java Conversion
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.0.1'
+	
+	// https://mvnrepository.com/artifact/org.json/json
+	compile group: 'org.json', name: 'json', version: '20190722'
+	
+}
